@@ -197,7 +197,7 @@ public class EventBus implements Runnable {
   /**
    * Registers all handler methods on {@code object} to receive events.
    * 
-   * @param object object whose handler methods should be registered.
+   * @param target object whose handler methods should be registered.
    */
   public void register(final Object target) {
     for (final Handler handler : getHandlersForTargetType(target.getClass())) {
@@ -209,7 +209,7 @@ public class EventBus implements Runnable {
    * Registers all handler methods on {@code object} to receive events, but only keeps a weak reference to the
    * object.
    * 
-   * @param object object whose handler methods should be registered.
+   * @param target object whose handler methods should be registered.
    */
   public void registerWeak(final Object target) {
     for (final Handler handler : getHandlersForTargetType(target.getClass())) {
@@ -220,7 +220,7 @@ public class EventBus implements Runnable {
   /**
    * Unregisters all handler methods on a registered {@code object}.
    * 
-   * @param object object whose handler methods should be unregistered.
+   * @param target object whose handler methods should be unregistered.
    */
   public void unregister(final Object target) {
     for (final Handler handler : getHandlersForTargetType(target.getClass())) {

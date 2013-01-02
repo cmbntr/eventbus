@@ -403,7 +403,6 @@ public class Handlers {
      * 
      * @param event the event
      * @param targets the targets
-     * @return the created instance
      */
     public EventAndTargets(final Object event, final Iterable<Object> targets) {
       super();
