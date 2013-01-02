@@ -8,7 +8,7 @@
 
   <modelVersion>4.0.0</modelVersion>
   <artifactId>eventbus</artifactId>
-  <version>0.9.0</version>
+  <version>0.9.1-SNAPSHOT</version>
 
   <packaging>jar</packaging>
 
@@ -27,7 +27,7 @@
     <url>https://github.com/cmbntr/eventbus</url>
     <connection>scm:git:git@github.com:cmbntr/eventbus.git</connection>
     <developerConnection>scm:git:git@github.com:cmbntr/eventbus.git</developerConnection>
-    <tag>RELEASE-0.9.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <dependencyManagement>
