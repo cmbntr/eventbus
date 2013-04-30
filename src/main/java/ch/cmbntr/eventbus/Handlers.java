@@ -192,7 +192,7 @@ public class Handlers {
    */
   public static Function<Method, Handler> handlerBuilder(final String identifier,
       final Function<? super Method, ? extends Executor> deliveryExecutor, final Predicate<? super Method> batchDelivery) {
-    final Logger logger = Logger.getLogger(EventHandler.class.getName() + "." + checkNotNull(identifier));
+    final Logger logger = Logger.getLogger(EventHandler.class.getName() + "_" + checkNotNull(identifier));
     return new Function<Method, Handler>() {
       @Override
       public Handler apply(final Method handler) {
